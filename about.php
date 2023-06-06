@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <title>Home page</title>
-    <?php include "pageHeader.php" ?>
+    <?php include "common/pageHeader.php" ?>
 </head>
 <body>
-    <?php  include 'header.php' ?>
+    <?php  include 'common/header.php' ?>
     <br>
     This is about page
 
-    <?php include 'pageJs.php' ?>
+    <?php include 'common/pageJs.php' ?>
 
 </body>
 </html>
