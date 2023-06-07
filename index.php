@@ -55,14 +55,14 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.php" class="active">Home</a></li>
-          <li><a href="index.html#about">Services</a></li>
+          <li><a href="index.php#services">Services</a></li>
           <li><a href="index.html#services">Develoment</a></li>
           <li><a href="index.html#portfolio">Training</a></li>
           <li><a href="index.html#team">Intership</a></li>
           <li><a href="blog.html">Placement</a></li>
           <li><a href="blog.html">Gallery</a></li>
           <li><a href="blog.html">Career</a></li>
-          <li><a href="blog.html">AboutUs</a></li>
+          <li><a href="index.php#about">AboutUs</a></li>
           <li><a href="forms/contact.php">ContactUs</a></li>
         </ul>
 
@@ -102,61 +102,34 @@
     <span class="visually-hidden">Next</span>
   </button>
 
-     
+
 
     </section><!-- End Hero Section -->
-        <!-- Features Section - Home Page -->
-        <section id="features" class="features">
+    
+  <!-- Features Section - Home Page -->
+  
+   <section id="features" class="features">
+      <?php include "features.php" ?>
+   </section> 
+   
+   <!-- End Features Section -->
 
-<!-- Features Section Title -->
-<div class="container section-title" data-aos="fade-up">
-  <h2>Features</h2>
-  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-</div><!-- End Section Title -->
+   <!-- Services Section - Home Page -->
+    <section id="services" class="services">
 
-<div class="container">
+      <?php include "services.php" ?>
 
-  <div class="row gy-4 align-items-center features-item">
-    <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-      <h3>Corporis temporibus maiores provident</h3>
-      <p>
-        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-      </p>
-      <a href="#" class="btn btn-get-started">Get Started</a>
-    </div>
-    <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-      <div class="image-stack">
-        <img src="assets/img/features-light-1.jpg" alt="" class="stack-front">
-        <img src="assets/img/features-light-2.jpg" alt="" class="stack-back">
-      </div>
-    </div>
-  </div>
-  <!-- Features Item -->
+    </section>
+   <!-- End Services Section -->
 
-  <div class="row gy-4 align-items-stretch justify-content-between features-item ">
-    <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-      <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
-    </div>
-    <div class="col-lg-5 d-flex justify-space-around flex-column card shadow-lg px-2 py-4 min-vh-50" data-aos="fade-up">
-       <h2 class="px-2 fw-bolder">ENDEAVOUR AND VISION</h2>
-       <p class="px-2 py-2">We explore not only the "what" but also the 
-        "why" and the "how" of programming. And we encourage our
-         visitors to think critically about how technology is changing the way we work,
-          live, and play. Discover, Create, and Learn at the Techsoft India! Have fun
-           exploring the past, present, and future of computer programming through 
-           hands-on activities, while creatively solving problems and making new friends. 
-           Get ready to be inspired. Get ready to 
-        change the world. Our content and curriculum have obvious ties to Science, Technology, and Engineering.</p>
-      <div class="btn my-4 ">
-      <a href="#" class="btn btn-get-started ">Get Started</a>
-      </div>
-    </div>
-  </div><!-- Features Item -->
+  <!-- About Section - Home Page -->
+    <section id="about" class="about">
 
-</div>
+        <?php include "about.php" ?>
 
-</section><!-- End Features Section -->
+    </section>
+
+  <!-- End About Section -->
 
     <!-- Clients Section - Home Page -->
     <section id="clients" class="clients">
@@ -195,61 +168,7 @@
 
     </section><!-- End Clients Section -->
 
-    <!-- About Section - Home Page -->
-    <section id="about" class="about">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-xl-center gy-5">
-
-          <div class="col-xl-5 content">
-            <h3>About Us</h3>
-            <h2>Ducimus rerum libero reprehenderit cumque</h2>
-            <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.</p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
-          <div class="col-xl-7">
-            <div class="row gy-4 icon-boxes">
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box">
-                  <i class="bi bi-buildings"></i>
-                  <h3>Eius provident</h3>
-                  <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-clipboard-pulse"></i>
-                  <h3>Rerum aperiam</h3>
-                  <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-command"></i>
-                  <h3>Veniam omnis</h3>
-                  <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-graph-up-arrow"></i>
-                  <h3>Delares sapiente</h3>
-                  <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p>
-                </div>
-              </div> <!-- End Icon Box -->
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- End About Section -->
 
     <!-- Stats Section - Home Page -->
     <section id="stats" class="stats">
@@ -294,84 +213,7 @@
 
     </section><!-- End Stats Section -->
 
-    <!-- Services Section - Home Page -->
-    <section id="services" class="services">
 
-      <!-- Services Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div data-aos-delay="100" data-aos="fade-up" class="col-lg-6">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-              <div>
-                <h4 class="title"><a class="stretched-link" href="services-details.html">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              </div>
-            </div>
-          </div>
-
-          <div data-aos-delay="200" data-aos="fade-up" class="col-lg-6">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-              <div>
-                <h4 class="title"><a class="stretched-link" href="services-details.html">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              </div>
-            </div>
-          </div>
-
-          <div data-aos-delay="300" data-aos="fade-up" class="col-lg-6">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-              <div>
-                <h4 class="title"><a class="stretched-link" href="services-details.html">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              </div>
-            </div>
-          </div>
-
-          <div data-aos-delay="400" data-aos="fade-up" class="col-lg-6">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-              <div>
-                <h4 class="title"><a class="stretched-link" href="services-details.html">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              </div>
-            </div>
-          </div>
-
-          <div data-aos-delay="500" data-aos="fade-up" class="col-lg-6">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-              <div>
-                <h4 class="title"><a class="stretched-link" href="services-details.html">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-              </div>
-            </div>
-          </div>
-
-          <div data-aos-delay="600" data-aos="fade-up" class="col-lg-6">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-              <div>
-                <h4 class="title"><a class="stretched-link" href="services-details.html">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Services Section -->
 
 
 
