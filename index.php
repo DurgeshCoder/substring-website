@@ -54,7 +54,7 @@
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.php" class="active">Home</a></li>
+          <li><a href="index.php#hero" class="active">Home</a></li>
           <li><a href="index.php#services">Services</a></li>
           <li><a href="index.html#services">Develoment</a></li>
           <li><a href="index.html#portfolio">Training</a></li>

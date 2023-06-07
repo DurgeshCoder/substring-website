@@ -7,7 +7,7 @@
 <body>
               <!-- Services Section Title -->
               <div class="container section-title" data-aos="fade-up">
-        <h1>WHY TECHSOFT INDIA ?</h1>
+        <h1>WHY Substring Technology ?</h1>
         
       </div><!-- End Section Title -->
 <div class="container" data-aos="fade-up" data-aos-delay="100">
