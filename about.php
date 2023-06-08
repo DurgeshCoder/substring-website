@@ -38,7 +38,7 @@
                 <div class="icon-box">
                   <i class="bi bi-clipboard-pulse"></i>
                   <h3>Our Promise</h3>
-                  <p>At TechSoft INDIA we promise that
+                  <p>At Substring Technology we promise that
                      no matter what you need, you can rest 
                     assured that we will deliver a premium 
                     software solution with the best price/performance

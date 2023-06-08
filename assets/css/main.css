@@ -63,7 +63,7 @@ a {
 }
 
 a:hover {
-  color: rgba(var(--color-primary-rgb), 0.7);
+  color: rgba(var(--color-de), 0.7);
   text-decoration: none;
 }
 
@@ -186,7 +186,7 @@ section {
   font-size: 24px;
   margin: 0;
   font-weight: 600;
-  color: var(--color-secondary);
+  color: var(--color-default);
 }
 
 .header .logo span {
@@ -254,10 +254,10 @@ section {
 /* Home Page Custom Header
 ------------------------------*/
 .index-page .header {
-  --color-background: rgba(255, 255, 255, 0);
-  --color-secondary: #ffffff;
-  --color-nav: rgba(255, 255, 255, 0.515);
-  --color-nav-hover: #ffffff;
+  --color-background: #ffffff;
+  --color-secondary: #444444;
+  --color-nav: #444444;
+  --color-nav-hover: #d83535;
 }
 
 /* Home Page Custom Header on page scroll
@@ -2923,6 +2923,17 @@ section {
   color: var(--color-inverse);
   background-color: rgba(var(--color-primary-rgb), 0.8);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -15,10 +15,10 @@
 
         <div class="row gy-4 justify-content-evenly">
 
-          <div data-aos-delay="100" data-aos="fade-up" class="col-lg-3 card border-0 shadow-lg ">
+          <div data-aos-delay="100" data-aos="fade-up" class="col-lg-3 card border-0 shadow-lg  ">
       
             <div class="service-item text-center">
-            <div class="icon flex-shrink-0 m-auto" style="margin-top:-20px;"><img src="Images/web-development.png " width="60px" ></div>
+            <div class="icon flex-shrink-0 " style="margin-top:-20px;"><img src="Images/web-development.png " width="60px" ></div>
               <div>
                 <h4 class="title"><a class="stretched-link" href="services-details.html">Website Development</a></h4>
                 <p class="description">We provide custom website development to enterprise/companies to....</p>
@@ -26,7 +26,7 @@
             </div>
           </div>
 
-          <div data-aos-delay="100" data-aos="fade-up" class="col-lg-3 card border-0 shadow-lg">
+          <div data-aos-delay="100" data-aos="fade-up" class="col-lg-3 card border-0 shadow-lg  m-md-2">
       
             <div class="service-item text-center">
             <div class="icon flex-shrink-0 m-auto"><i class="bi bi-briefcase"></i></div>
