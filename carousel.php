@@ -11,7 +11,8 @@
        .btn-carousel{
         background: #e84545;
         color: #fff;
-         transition: 0.3s;
+        transition: 0.3s ease;
+         padding: 8px 20px;
        }
        .btn-carousel:hover{
         background: rgba(232, 69, 69, 0.85);

@@ -1051,7 +1051,7 @@ section {
   padding: 120px 0;
 }
 
-.stats img {
+.stats .statsbg {
   position: absolute;
   inset: 0;
   display: block;

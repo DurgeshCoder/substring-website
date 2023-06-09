@@ -18,7 +18,7 @@
           <div data-aos-delay="100" data-aos="fade-up" class="col-lg-3 card border-0 shadow-lg  ">
       
             <div class="service-item text-center">
-            <div class="icon flex-shrink-0 " style="margin-top:-20px;"><img src="Images/web-development.png " width="60px" ></div>
+            <div class="icon flex-shrink-0 m-auto" style="margin-top:-20px;"><img src="Images/web-development.png " width="60px" ></div>
               <div>
                 <h4 class="title"><a class="stretched-link" href="services-details.html">Website Development</a></h4>
                 <p class="description">We provide custom website development to enterprise/companies to....</p>
@@ -47,9 +47,9 @@
       </div>
 
     </div>
-    <div class="btn">
+    <!-- <div class="btn">
       <a href="" class="btn border px-4 shadow-lg">MORE</a>
-     </div>
+     </div> -->
 
         </div>
  
