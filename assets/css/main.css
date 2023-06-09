@@ -106,7 +106,34 @@ section {
   background: var(--color-primary);
   display: inline-block;
 }
-
+@media (max-width: 1199px) { 
+  .section-title h2:before,
+.section-title h2:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: var(--color-primary);;
+  display: inline-block;
+}
+}
+.training-title h2:before,
+.training-title h2:after {
+  content: "";
+  width: 5px;
+  height: 2px;
+  background: var(--color-primary);;
+  display: inline-block;
+}
+@media (max-width: 1199px) { 
+  .training-title h2:before,
+.training-title h2:after {
+  content: "";
+  width: 5px;
+  height: 2px;
+  background: var(--color-primary);;
+  display: inline-block;
+}
+}
 .section-title h2:before {
   margin: 0 15px 10px 0;
 }
@@ -116,6 +143,28 @@ section {
 }
 
 .section-title p {
+  margin-bottom: 0;
+}
+.training-title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.training-title h2 {
+  color: var(--color-secondary);
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+.training-title h2:before {
+  margin: 0 15px 10px 0;
+}
+
+.training-title h2:after {
+  margin: 0 0 10px 15px;
+}
+
+.training-title p {
   margin-bottom: 0;
 }
 
@@ -283,11 +332,12 @@ section {
     padding: 0;
     display: flex;
     list-style: none;
-    align-items: center;
+    text-align: center;
   }
 
   .navmenu li {
     position: relative;
+   
   }
 
   .navmenu a,
@@ -455,6 +505,7 @@ section {
     transition: 0.3s;
     z-index: 9998;
     box-shadow: 0px 0px 30px rgba(var(--color-default-rgb), 0.1);
+   
   }
 
   .navmenu a,
@@ -466,9 +517,14 @@ section {
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     white-space: nowrap;
     transition: 0.3s;
+    background: #e84545;
+    margin: 20px 20px;
+    border-radius: 10px;
+    color: #fff;
+    
   }
 
   .navmenu a i,
@@ -479,11 +535,11 @@ section {
     width: 30px;
     height: 30px;
     display: flex;
-    align-items: center;
+    text-align: center;
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: rgba(var(--color-primary-rgb), 0.1);
+    background-color: rgba(var(--color-primary), 0.1);
   }
 
   .navmenu a i:hover,
@@ -495,7 +551,7 @@ section {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--color-nav-dropdown-hover);
+    color: #ffc107;
   }
 
   .navmenu .active i,
@@ -2926,7 +2982,89 @@ section {
 
 
 
+/* Services Section - Home Page
+------------------------------*/
+.training .training-item {
 
+  
+  position: relative;
+  padding-top: 40px;
+}
+
+.training .training-item:before {
+
+  
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(var(--color-default-rgb), 0.1);
+}
+
+.training .training-item::after {
+
+  
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--color-primary);
+  border-right: 5px solid var(--color-background);
+}
+
+.training .training-item .icon {
+
+  
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-right: 50px;
+  line-height: 0;
+}
+
+.training .training-item .icon i {
+  color: rgba(var(--color-default-rgb), 0.7);
+  font-size: 56px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+}
+
+.training .training-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  background: rgba(var(--color-primary-rgb), 0.3);
+  border-radius: 50px;
+  z-index: 1;
+  bottom: -15px;
+  right: -15px;
+  transition: 0.3s;
+}
+
+.training .training-item .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.training .training-item .title a {
+  color: var(--color-secondary);
+}
+
+.training .training-item .title a:hover {
+  color: var(--color-primary);
+}
+
+.training .training-item .description {
+  line-height: 24px;
+  font-size: 14px;
+}
 
 
 

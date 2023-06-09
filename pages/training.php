@@ -1,6 +1,6 @@
 
           <!-- Services Section Title -->
-          <div class="container section-title" data-aos="fade-up">
+          <div class="container training-title" data-aos="fade-up">
         <h2>Offline Training</h2>
         <p>Training that we provide...........</p>
       </div><!-- End Section Title -->
@@ -11,7 +11,7 @@
 
           <div data-aos-delay="100" data-aos="fade-up" class="col-lg-3 card border-0 shadow-lg  ">
       
-            <div class="service-item text-center">
+            <div class="training-item text-center">
             <div class="icon flex-shrink-0 " style="margin-top:-20px;"><img src="Images/web-development.png " width="60px" ></div>
               <div>
                 <h4 class="title"><a class="stretched-link" href="services-details.html">Website Development</a></h4>
@@ -22,7 +22,7 @@
 
           <div data-aos-delay="100" data-aos="fade-up" class="col-lg-3 card border-0 shadow-lg  m-md-2">
       
-            <div class="service-item text-center">
+            <div class="training-item text-center">
             <div class="icon flex-shrink-0 m-auto"><i class="bi bi-briefcase"></i></div>
               <div>
                 <h4 class="title"><a class="stretched-link" href="services-details.html">Software Development</a></h4>
@@ -32,7 +32,7 @@
           </div>
           <div data-aos-delay="100" data-aos="fade-up" class="col-lg-3 card border-0 shadow-lg">
       
-      <div class="service-item text-center">
+      <div class="training-item text-center">
       <div class="icon flex-shrink-0 m-auto"><i class="bi bi-briefcase"></i></div>
         <div>
           <h4 class="title"><a class="stretched-link" href="services-details.html">Android App Development</a></h4>
@@ -50,7 +50,7 @@
       </div>
 
 
-      <div class="container section-title my-4" data-aos="fade-up">
+      <div class="container training-title my-4" data-aos="fade-up">
         <h2>Free Online Training</h2>
         <p>Training that we provide...........</p>
       </div><!-- End Section Title -->
@@ -61,7 +61,7 @@
 
           <div data-aos-delay="100" data-aos="fade-up" class="col-lg-4 card border-0 shadow-lg  ">
       
-            <div class="service-item text-center">
+            <div class="training-item text-center">
             <div class="icon flex-shrink-0 m-auto " ><img src="Images/lcwd_logo.png " width="60px" ></div>
               <div>
                 <h2 class="title"><a class="stretched-link" href="services-details.html"><h1>Learncodewith Durgesh</h1></a></h2>
@@ -76,7 +76,7 @@
 
           <div data-aos-delay="100" data-aos="fade-up" class="col-lg-4 card border-0 shadow-lg  ">
       
-            <div class="service-item text-center">
+            <div class="training-item text-center">
             <div class="icon flex-shrink-0 m-auto " ><img src="Images/lcwd_logo.png " width="60px" ></div>
               <div>
                 <h2 class="title"><a class="stretched-link" href="services-details.html"><h1>Learncodewith Durgesh</h1></a></h2>
@@ -91,7 +91,7 @@
 
 <div data-aos-delay="100" data-aos="fade-up" class="col-lg-4 card border-0 shadow-lg  ">
 
-  <div class="service-item text-center">
+  <div class="training-item text-center">
   <div class="icon flex-shrink-0 " style="margin-top:-20px;"><img src="Images/web-development.png " width="60px" ></div>
     <div>
       <h4 class="title"><a class="stretched-link" href="services-details.html">Website Development</a></h4>
@@ -102,7 +102,7 @@
 
 <div data-aos-delay="100" data-aos="fade-up" class="col-lg-4 card border-0 shadow-lg  m-md-2">
 
-  <div class="service-item text-center">
+  <div class="training-item text-center">
   <div class="icon flex-shrink-0 m-auto"><i class="bi bi-briefcase"></i></div>
     <div>
       <h4 class="title"><a class="stretched-link" href="services-details.html">Software Development</a></h4>
