@@ -3101,7 +3101,12 @@ section {
  }
  @media (max-width: 800px) {
   .carousel{
-  height: auto;
+  height: auto; 
+
+ }
+ .carousel img{
+  width: 90%;
+ margin-left: 20px;
  }
   }
  h2{
