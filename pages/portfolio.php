@@ -35,7 +35,7 @@
   <div class="portfolio-info">
     <h4>Online Training</h4>
    
-    <a href="images/online_training/photo_1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+    <a href="images/online_training/photo_1.jpg" title="Online Training" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
   </div>
 </div><!-- End Portfolio Item -->
@@ -47,7 +47,7 @@
   <div class="portfolio-info">
     <h4>Online Training</h4>
    
-    <a href="images/online_training/photo_2.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+    <a href="images/online_training/photo_2.jpg" title="Online Training" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
   </div>
 </div><!-- End Portfolio Item -->
@@ -59,7 +59,7 @@
   <div class="portfolio-info">
     <h4>Online Training</h4>
    
-    <a href="images/online_training/photo_3.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+    <a href="images/online_training/photo_3.jpg" title="Online Training" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
   </div>
 </div><!-- End Portfolio Item -->
