@@ -61,7 +61,7 @@
           <div data-aos-delay="100" data-aos="fade-up" class="col-lg-4 card border-0 shadow-lg  ">
       
             <div class="training-item text-center">
-            <div class="icon flex-shrink-0 m-auto " ><img src="Images/youtube_logo.png "  class="w-50"></div>
+            <div class="icon flex-shrink-0 m-auto " ><img src="images/youtube_logo.png "  class="w-50"></div>
               <div>
                 <h4 class="title"><a class="stretched-link" href="https://www.youtube.com/@LearnCodeWithDurgesh" target="blank">Learn Code With Durgesh</a></h4>
                 <p class="description">Learn Code With Durgesh<br>
@@ -76,7 +76,7 @@
           <div data-aos-delay="100" data-aos="fade-up" class="col-lg-4 card border-0 shadow-lg  ">
       
             <div class="training-item text-center">
-            <div class="icon flex-shrink-0 m-auto my-4" ><img src="Images/lcwd_logo.png " class="w-25" ></div>
+            <div class="icon flex-shrink-0 m-auto my-4" ><img src="images/lcwd_logo.png " class="w-25" ></div>
               <div>
                 <h4 class="title"><a class="stretched-link" href="https://learncodewithdurgesh.com/" target="blank" >LCWD Website</a></h4>
                 <p class="description">Thousands of student daily use this resource to sharp their programming skills
@@ -91,7 +91,7 @@
 <div data-aos-delay="100" data-aos="fade-up" class="col-lg-4 card border-0 shadow-lg  ">
 
   <div class="training-item text-center">
-  <div class="icon flex-shrink-0 m-auto " ><img src="Images/Substring Technology.png "class="w-50" ></div>
+  <div class="icon flex-shrink-0 m-auto " ><img src="images/Substring Technology.png "class="w-50" ></div>
     <div>
       <h4 class="title"><a class="stretched-link" href="services-details.html">Live classes</a></h4>
       <p class="description">We provide online training on different Technologies like C, C++, Java, Python, Javascript etc.</p>
@@ -108,7 +108,7 @@
 <div data-aos-delay="100" data-aos="fade-up" class="col-lg-4 card border-0 shadow-lg ">
 
   <div class="training-item text-center">
-  <div class="icon flex-shrink-0 m-auto"><img src="Images/Substring Technology.png " class="w-50"></i></div>
+  <div class="icon flex-shrink-0 m-auto"><img src="images/Substring Technology.png " class="w-50"></i></div>
     <div>
       <h4 class="title"><a class="stretched-link" href="services-details.html">Mentorship</a></h4>
       <p class="description">We provide Mentorship related to technology and projects</p>

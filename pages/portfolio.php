@@ -23,7 +23,7 @@
       <div class="portfolio-info">
         <h4>Online Training</h4>
        
-        <a href="images/online_training/photo_6.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/online_training/photo_6.jpg" title="Online Training" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -69,7 +69,7 @@
       <div class="portfolio-info">
         <h4>Certificate Distribution</h4>
        
-        <a href="images/offline_training/photo_6.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_6.jpg" title="Offline Training" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -79,7 +79,7 @@
       <div class="portfolio-info">
         <h4>Offline Training</h4>
        
-        <a href="images/offline_training/photo_1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_1.jpg" title="Offline Training" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -89,7 +89,7 @@
       <div class="portfolio-info">
         <h4>Online Training</h4>
        
-        <a href="images/online_training/photo_7.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/online_training/photo_7.jpg" title="Online Training" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -99,7 +99,7 @@
       <div class="portfolio-info">
         <h4>Certificate Distribution</h4>
        
-        <a href="images/offline_training/photo_2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_2.jpg" title="Offline Training" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -109,7 +109,7 @@
       <div class="portfolio-info">
         <h4>Offline Training</h4>
        
-        <a href="images/offline_training/photo_5.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_5.jpg" title="Offline Training" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -119,7 +119,7 @@
       <div class="portfolio-info">
         <h4>Online Training</h4>
        
-        <a href="images/online_training/photo_7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/online_training/photo_7.jpg" title="Online Training" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -129,7 +129,7 @@
       <div class="portfolio-info">
         <h4>Certificate Distribution</h4>
        
-        <a href="images/offline_training/photo_12.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_12.jpg" title="Offline Training" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -139,7 +139,7 @@
       <div class="portfolio-info">
         <h4>Offline Training</h4>
        
-        <a href="images/offline_training/photo_4.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_4.jpg" title="Offline Training" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -149,7 +149,7 @@
       <div class="portfolio-info">
         <h4>Offline Training</h4>
        
-        <a href="images/offline_training/photo_3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_3.jpg" title="Offline Training" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -158,7 +158,7 @@
       <div class="portfolio-info">
         <h4>Offline Training</h4>
        
-        <a href="images/offline_training/photo_7.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_7.jpg" title="Offline Training" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -167,7 +167,7 @@
       <div class="portfolio-info">
         <h4>Offline Training</h4>
        
-        <a href="images/offline_training/photo_8.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_8.jpg" title="Offline Training" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -176,7 +176,7 @@
       <div class="portfolio-info">
         <h4>Offline Training</h4>
        
-        <a href="images/offline_training/photo_9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_9.jpg" title="Offline Training" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -185,7 +185,7 @@
       <div class="portfolio-info">
         <h4>Offline Training</h4>
        
-        <a href="images/offline_training/photo_10.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_10.jpg" title="Offline Training" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
@@ -194,7 +194,7 @@
       <div class="portfolio-info">
         <h4>Offline Training</h4>
        
-        <a href="images/offline_training/photo_11.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+        <a href="images/offline_training/photo_11.jpg" title="Offline Training" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
         <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div><!-- End Portfolio Item -->
