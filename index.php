@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Substring Technologies Private Limited</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Welcome to Substring Technologies Private Limited, your premier destination for professional software development and training services. We specialize in crafting robust software solutions and providing comprehensive training programs to empower individuals and organizations in the ever-evolving world of technology." name="description">
+  <meta content="substring technolodies, substring technologies private limited" name="keywords">
 
   <!-- Favicons -->
   <link href="Images/Substring Technology.png" rel="icon">
@@ -45,7 +45,7 @@
 
   <!-- ======= Header ======= -->
   <header class="header d-flex align-items-center sticky-top" id="header">
-   <?php include "commonpage/header.php" ?>
+   <?php include "components/header.php" ?>
   </header>
   <!-- End Header -->
 
@@ -183,7 +183,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    <?php include "commonpage/footer.php" ?>
+    <?php include "components/footer.php" ?>
 
   </footer><!-- End Footer -->
 
