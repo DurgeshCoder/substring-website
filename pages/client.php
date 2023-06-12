@@ -25,7 +25,7 @@
   </div><!-- End Client Item -->
 
   <div class="col-xl-2 col-md-3 col-6 client-logo">
-    <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+    <img src="images/impressico.png" class="img-fluid w-50" alt="">
   </div><!-- End Client Item -->
 
 </div>

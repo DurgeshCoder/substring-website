@@ -24,8 +24,8 @@
     </div>
     <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
       <div class="image-stack">
-        <img src="assets/img/features-light-1.jpg" alt="" class="stack-front">
-        <img src="assets/img/features-light-2.jpg" alt="" class="stack-back">
+        <img src="images/feature1.jpg" alt="" class="stack-front">
+        <img src="images/f.jpg" alt="" class="stack-back">
       </div>
     </div>
   </div>
@@ -35,8 +35,8 @@
 
     <div class="col-lg-6 order-2 order-lg-1 d-flex align-items-center mx-lg-2" data-aos="zoom-out" data-aos-delay="100">
       <div class="image-stack">
-        <img src="assets/img/features-light-1.jpg" alt="" class="stack-front">
-        <img src="assets/img/features-light-2.jpg" alt="" class="stack-back">
+        <img src="images/feature4.jpg" alt="" class="stack-front">
+        <img src="images/feature3.jpg" alt="" class="stack-back">
       </div>
     </div>
     <div class="col-lg-5 order-1 order-lg-2 card border-0 shadow-lg p-4" data-aos="fade-up" data-aos-delay="200">
