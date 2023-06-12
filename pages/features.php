@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 
-    <title>features</title>
-</head>
-<body>
 <!-- Features Section Title -->
 <div class="container section-title" data-aos="fade-up">
   <h2>Features</h2>
-  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+  
 </div><!-- End Section Title -->
 
 <div class="container">
@@ -66,5 +60,3 @@
 </div>
 
 
-</body>
-</html>

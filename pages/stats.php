@@ -8,7 +8,7 @@
   <span><i class="fas fa-desktop"></i></span>
       <div class="stats-item text-center w-100 h-100">
       <img src="images/placement.png" alt="">
-        <span  data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+        <span  data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="1" class="purecounter"></span>
         <p>Placement</p>
       </div>
     </div><!-- End Stats Item -->
@@ -16,7 +16,7 @@
     <div class="col-lg-3 col-md-6">
       <div class="stats-item text-center w-100 h-100">
       <img src="images/training.png" alt="">
-        <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+        <span data-purecounter-start="0" data-purecounter-end="500000" data-purecounter-duration="1" class="purecounter"></span>
   
     
       
@@ -28,7 +28,7 @@
     
       <div class="stats-item text-center w-100 h-100">
       <img src="images/data-science.png" alt="">
-        <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+        <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
         <p>Projects</p>
       </div>
     </div><!-- End Stats Item -->
@@ -36,7 +36,7 @@
     <div class="col-lg-3 col-md-6">
       <div class="stats-item text-center w-100 h-100">
       <img src="images/month.png" alt="">
-        <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+        <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter"></span>
         <p>Months</p>
       </div>
     </div><!-- End Stats Item -->

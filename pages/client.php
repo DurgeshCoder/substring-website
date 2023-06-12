@@ -5,23 +5,23 @@
 <div class="row gy-4">
 
   <div class="col-xl-2 col-md-3 col-6 client-logo">
-    <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+    <img src="images//tcs.png" class="img-fluid w-50" alt="">
   </div><!-- End Client Item -->
 
   <div class="col-xl-2 col-md-3 col-6 client-logo">
-    <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+    <img src="images//infosys.png" class="img-fluid w-75" alt="">
   </div><!-- End Client Item -->
 
   <div class="col-xl-2 col-md-3 col-6 client-logo">
-    <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+    <img src="images//google.png" class="img-fluid" alt="">
   </div><!-- End Client Item -->
 
   <div class="col-xl-2 col-md-3 col-6 client-logo">
-    <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+    <img src="images//nokia.png" class="img-fluid" alt="">
   </div><!-- End Client Item -->
 
   <div class="col-xl-2 col-md-3 col-6 client-logo">
-    <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+    <img src="images//amazon.png" class="img-fluid" alt="">
   </div><!-- End Client Item -->
 
   <div class="col-xl-2 col-md-3 col-6 client-logo">

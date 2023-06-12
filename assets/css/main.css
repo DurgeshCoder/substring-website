@@ -746,7 +746,7 @@ section {
 }
 
 .footer .footer-about .logo {
-  line-height: 0;
+  /* line-height: none; */
   margin-bottom: 25px;
 }
 
@@ -756,12 +756,14 @@ section {
 }
 
 .footer .footer-about .logo span {
+
   color: var(--color-secondary);
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: var(--font-primary);
 }
+
 
 .footer .footer-about p {
   font-size: 14px;
@@ -1180,7 +1182,7 @@ section {
   border-right: 5px solid var(--color-background);
 }
 
-.services .service-item .icon {
+/* .services .service-item .icon {
   width: 48px;
   height: 48px;
   position: relative;
@@ -1207,7 +1209,7 @@ section {
   bottom: -15px;
   right: -15px;
   transition: 0.3s;
-}
+} */
 
 .services .service-item .title {
   font-weight: 700;
@@ -3016,7 +3018,7 @@ section {
   border-right: 5px solid var(--color-background);
 }
 
-.training .training-item .icon {
+/* .training .training-item .icon {
 
   
   width: 48px;
@@ -3045,7 +3047,7 @@ section {
   bottom: -15px;
   right: -15px;
   transition: 0.3s;
-}
+} */
 
 .training .training-item .title {
   font-weight: 700;
@@ -3081,3 +3083,39 @@ section {
 
 
 
+
+
+/* carousel */
+.btn-carousel{
+  background: #e84545;
+  color: #fff;
+  transition: 0.3s ease;
+   padding: 8px 20px;
+ }
+ .btn-carousel:hover{
+  background: rgba(232, 69, 69, 0.85);
+  color: #fff;
+ }
+ .carousel{
+  height: auto;
+ }
+ @media (max-width: 800px) {
+  .carousel{
+  height: auto;
+ }
+  }
+ h2{
+  font-weight: 600;
+ }
+ .slider {
+
+  width: 100%;
+
+  
+
+}
+
+
+#mt{
+  margin-top: 100px;
+}

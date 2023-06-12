@@ -4,9 +4,10 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span>Append</span>
+            <span>Substring Technologies</span>
+           
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>We explore not only the "what" but also the "why" and the "how" of programming. And we encourage our visitors to think critically about how technology is changing the way we work, live, and play. Discover, Create, and Learn at the LearnCodeWith Durgesh. Have fun exploring the past, present, and future of computer programming through hands-on activities, while creatively solving problems and making new friends. Get ready to be inspired. Get ready to change the world. Our content and curriculum have obvious ties to Science, Technology, and Engineering.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -32,30 +33,30 @@
             <li><a href="#">Web Design</a></li>
             <li><a href="#">Web Development</a></li>
             <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Video Editing</a></li>
             <li><a href="#">Graphic Design</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>Substring Technologies, Vijayeepur ,</p>
+          <p>Vishesh Khand 2 Gomti Nagar,</p>
+          <p>Lucknow, INDIA, 226010</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 9839466732</span></p>
+          <p><strong>Email:</strong> <span>learncodewithdurgesh@gmail.com</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
+      <p>&copy; <span>Copyright</span> <strong class="px-1">Substring Technologies</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/append-bootstrap-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed & Developed by <a href="#">Substring Technologies</a>
       </div>
     </div>
