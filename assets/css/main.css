@@ -22,8 +22,9 @@
   --color-default-rgb: 33, 37, 41;
   --color-background: #ffffff;
   --color-background-rgb: 255, 255, 255;
-  --color-primary: #e84545;
-  --color-primary-rgb: 232, 69, 69;
+  --color-primary: #1565c0;
+  /* --color-primary-rgb: 232, 69, 69; */
+  --color-primary-rgb: 0, 0, 205;
   --color-secondary: #32353a;
   --color-secondary-rgb: 50, 53, 58;
   --color-box-background: #ffffff;
@@ -35,9 +36,9 @@
 /* Nav Menu Colors */
 :root {
   --color-nav: #3a3939;
-  --color-nav-hover: #e84545;
+  --color-nav-hover: #1565c0;;
   --color-nav-dropdown: #3a3939;
-  --color-nav-dropdown-hover: #e84545;
+  --color-nav-dropdown-hover: #1565c0;;
   --color-nav-dropdown-background: #ffffff;
   --color-nav-mobile-background: #ffffff;
 }
@@ -63,7 +64,7 @@ a {
 }
 
 a:hover {
-  color: rgba(var(--color-de), 0.7);
+  color: rgba(var(--color-primary),0.7);
   text-decoration: none;
 }
 
@@ -306,7 +307,7 @@ section {
   --color-background: #ffffff;
   --color-secondary: #444444;
   --color-nav: #444444;
-  --color-nav-hover: #d83535;
+  --color-nav-hover: #1565c0;
 }
 
 /* Home Page Custom Header on page scroll
@@ -315,7 +316,7 @@ section {
   --color-background: #ffffff;
   --color-secondary: #444444;
   --color-nav: #444444;
-  --color-nav-hover: #d83535;
+  --color-nav-hover: #1565c0;
 }
 
 /*--------------------------------------------------------------
@@ -520,7 +521,7 @@ section {
     justify-content: center;
     white-space: nowrap;
     transition: 0.3s;
-    background: #e84545;
+    background: #1565c0;
     margin: 20px 20px;
     border-radius: 10px;
     color: #fff;
@@ -3069,9 +3070,14 @@ section {
 }
 
 
+.btn-training{
+  background: var(--color-primary);
+  color: #fff;
+}
 
-
-
+.btn-training:hover{
+  background: rgba(var(--color-primary-rgb) 0.05);
+}
 
 
 
@@ -3087,13 +3093,13 @@ section {
 
 /* carousel */
 .btn-carousel{
-  background: #e84545;
+  background: var(--color-primary);
   color: #fff;
   transition: 0.3s ease;
    padding: 8px 20px;
  }
  .btn-carousel:hover{
-  background: rgba(232, 69, 69, 0.85);
+  background: var(--color-primary);
   color: #fff;
  }
  .carousel{

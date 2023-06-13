@@ -41,7 +41,7 @@
 
   
     <div class="btn text-center container">
-      <a href=""class="btn my-4 px-4" style="background:#e84545; color:#fff;">Contact for offline training</a>
+      <a href=""class="btn my-4 px-4" style="background:#1565c0; color:#fff;">Contact for offline training</a>
      </div>
 
         </div>
@@ -69,7 +69,7 @@
                                          More than 30000000+ Views
 </p>
               </div>
-              <a href="https://www.youtube.com/@LearnCodeWithDurgesh" target="blank" class="btn my-4 px-4" style="background:#e84545; color:#fff;">Subscribe</a>
+              <a href="https://www.youtube.com/@LearnCodeWithDurgesh" target="blank" class="btn btn-training my-4 px-4" >Subscribe</a>
             </div>
           </div>
 
@@ -82,7 +82,7 @@
                 <p class="description">Thousands of student daily use this resource to sharp their programming skills
 </p>
               </div>
-              <a href="https://learncodewithdurgesh.com/" target="blank" class="btn  px-4" style="background:#e84545; color:#fff; margin-top:50px;">Learn</a>
+              <a href="https://learncodewithdurgesh.com/" target="blank" class="btn btn-training  my-4 px-4" >Learn</a>
             </div>
           </div>
 
@@ -97,7 +97,7 @@
       <p class="description">We provide online training on different Technologies like C, C++, Java, Python, Javascript etc.</p>
     </div>
     <div>
-              <a href="" class="btn my-4 px-4" style="background:#e84545; color:#fff;">Join</a>
+              <a href="" class="btn btn-training my-4 px-4">Join</a>
             </div>
     </div>
 
@@ -114,7 +114,7 @@
       <p class="description">We provide Mentorship related to technology and projects</p>
     </div>
     <div>
-              <a href="" class="btn my-4 px-4" style="background:#e84545; color:#fff;">Get</a>
+              <a href="" class="btn btn-training my-4 px-4" >Get</a>
             </div>
   </div>
 
