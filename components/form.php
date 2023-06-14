@@ -15,7 +15,7 @@
 <body>
     <div class="container text-center">
         <h1>Register here</h1>
-        <form action="connect.php">
+        <!-- <form action="connect.php">
             <div class="row">
                 <div class="col-lg-12  my-4">
 
@@ -32,35 +32,41 @@
             </div>
           
          
-        </form>
+        </form> -->
+        <form action="insert.php" method="post">
+Name: <input type="text" name="firstname"><br>
+Name: <input type="text" name="lastname"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
     </div>
 </body>
 </html>
 
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test 1";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "test 1";
 
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// try {
+//   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+//   // set the PDO error mode to exception
+//   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $name= $_POST['name'];
-  $age= $_POST['age'];
+//   $name= $_POST['name'];
+//   $age= $_POST['age'];
 
-  $sql = "INSERT INTO users (name, age)
-  VALUES ('$name', '$age', )";
-  echo $sql;
-  // use exec() because no results are returned
-  $conn->exec($sql);
-  echo "New record created successfully";
-} catch(PDOException $e) {
-  echo "<br>" . $e->getMessage();
-}
+//   $sql = "INSERT INTO users (name, age)
+//   VALUES ('$name', '$age', )";
+//   echo $sql;
+//   // use exec() because no results are returned
+//   $conn->exec($sql);
+//   echo "New record created successfully";
+// } catch(PDOException $e) {
+//   echo "<br>" . $e->getMessage();
+// }
 
-$conn = null;
+// $conn = null;
 ?>

@@ -20,7 +20,7 @@
     <li><a href="/#portfolio">Gallery</a></li>
     <!-- <li><a href="blog.html">Career</a></li> -->
     <li><a href="/#about">AboutUs</a></li>
-    <li><a href="components/form.php">ContactUs</a></li>
+    <li><a href="contact_form.php">ContactUs</a></li>
   </ul>
 
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
