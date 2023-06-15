@@ -15,17 +15,17 @@
     <li><a href="/#services">Services</a></li>
     <li><a href="/#pricing">Develoment</a></li>
     <li><a href="/#training">Training</a></li>
-    <!-- <li><a href="index.html#team">Intership</a></li>
+    <!-- <li><a href="">Intership</a></li>
     <li><a href="blog.html">Placement</a></li> -->
     <li><a href="/#portfolio">Gallery</a></li>
     <!-- <li><a href="blog.html">Career</a></li> -->
     <li><a href="/#about">AboutUs</a></li>
-    <li><a href="contact_form.php">ContactUs</a></li>
+    <li><a href="">ContactUs</a></li>
   </ul>
 
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav><!-- End Nav Menu -->
 
-<a href="https://learncodewithdurgesh.com/contact-us" target="blank" class="btn-getstarted">Get Started</a>
+<a href="contact_form.php" target="blank" class="btn-getstarted">Get Started</a>
 
 </div>

@@ -20,7 +20,7 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Mr. Mahabeer Prasad Tiwari</h4>
+              <h4>Mr. M. P. Tiwari</h4>
               <span>Director</span>
              
             </div>

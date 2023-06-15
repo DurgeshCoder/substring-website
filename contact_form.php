@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Service Request Form</title>
     <meta content="Welcome to Substring Technologies Private Limited, your premier destination for professional software development and training services. We specialize in crafting robust software solutions and providing comprehensive training programs to empower individuals and organizations in the ever-evolving world of technology." name="description">
   <meta content="substring technolodies, substring technologies private limited" name="keywords">
 
@@ -53,8 +53,8 @@
 
       <!-- Contact Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Get in Touch: Contact Us Today!</p>
+        <h2>Service Request Form</h2>
+        <p>Fill the detail correctly, so that we contact you.....</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -64,7 +64,7 @@
 
 
           <div class="col-lg-6">
-            <form action="contact_form.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="components/insert.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -78,8 +78,23 @@
                 <div class="col-md-12">
                   <select type="text" class="form-control" name="subject" placeholder="Subject" required>
                   <option value="">--Please choose an option--</option>
-                  <option value="offline_training">Offline Traning</option>
-                  <option value="online_training">Online Traning</option>
+                  <option value="Want_a_website_ (website Develoment)">Want a website (website Develoment)</option>
+                  <option value="Want_an_App">Want an App</option>
+                  <option value="C_Programming_training">C Programming Training</option>
+                  <option value="C++_Programming_training">C++ Programming Training</option>
+                  <option value="Core_java_training">Core Java Training</option>
+                  <option value="advance_java_training">Advance Java Training</option>
+                  <option value="Core_python_training">Core Python Training</option>
+                  <option value="Django_training">Django Training</option>
+                  <option value="javascript_training">Javascript Training</option>
+                  <option value="web_development_training">Web development Training</option>
+                  <option value="android_app_development_training">Andriod App Develoment Training</option>
+                  <option value="backend_using_springboot_training">Backend Using SpringBoot Training</option>
+                  <option value="meanstack_training">MEANStack Training</option>
+                  <option value="mearnstack_training">MEARNStack Training</option>
+                  <option value="angular_training">Angular Training</option>
+                  <option value="reactjs_training">Reactjs Training</option>
+                  <option value="other_software_training">Other software Training</option>
                   </select>
                 </div>
 
@@ -90,48 +105,23 @@
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
+                  <div class="sent-message">Your message has been sent. Thank you! 
+                    <div><a href="contact_form.php">ok</a></div>
+                  </div>
+                  
                   <button type="submit">Send Message</button>
                 </div>
 
               </div>
             </form>
+
           </div><!-- End Contact Form -->
 
         </div>
 
       </div>
-
-        
+     
       </section><!-- End Contact Section -->
-      <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "substring_technologies";
-
-$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-// set the PDO error mode to exception
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-// prepare sql and bind parameters
-$stmt = $conn->prepare("INSERT INTO student_detail (name, email, subject, message) 
-                        VALUES (:name,  :email, :subject, :message)");
-$stmt->bindParam(':name', $name);
-$stmt->bindParam(':email', $email);
-$stmt->bindParam(':subject', $subject);
-$stmt->bindParam(':message', $message);
-
-// insert a row
-$name = $_POST["name"];
-$email = $_POST["email"];
-$subject = $_POST["subject"];
-$message = $_POST["message"];
-$stmt->execute();
-echo "New record insert successfully"
-
-?>
     </main>
    
     <!-- ======= Footer ======= -->

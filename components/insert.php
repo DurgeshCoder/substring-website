@@ -2,26 +2,27 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "test1";
+$dbname = "substringtechnologies";
 
 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 // set the PDO error mode to exception
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // prepare sql and bind parameters
-$stmt = $conn->prepare("INSERT INTO users (firstname, lastname, email) 
-                        VALUES (:firstname, :lastname, :email)");
-$stmt->bindParam(':firstname', $firstname);
-$stmt->bindParam(':lastname', $lastname);
+$stmt = $conn->prepare("INSERT INTO  studentdetail (name,  email, subject, message) 
+                        VALUES (:name, :email, :subject, :message)");
+$stmt->bindParam(':name', $name);
 $stmt->bindParam(':email', $email);
+$stmt->bindParam(':subject', $subject);
+$stmt->bindParam(':message', $message);
 
 // insert a row
-$firstname = $_POST["firstname"];
-$lastname = $_POST["lastname"];
+$name = $_POST["name"];
 $email = $_POST["email"];
+$subject = $_POST["subject"];
+$message = $_POST["message"];
 $stmt->execute();
-echo "New record insert successfully"
+echo "Your message has been sent. Thank you!"
 
 ?>
 
-<a href="viewdata.php">ok</a>

@@ -34,9 +34,10 @@
          
         </form> -->
         <form action="insert.php" method="post">
-Name: <input type="text" name="firstname"><br>
-Name: <input type="text" name="lastname"><br>
+Name: <input type="text" name="name"><br>
 E-mail: <input type="text" name="email"><br>
+Subject: <input type="text" name="subject"><br>
+message: <input type="text" name="message"><br>
 <input type="submit">
 </form>
     </div>
