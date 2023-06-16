@@ -20,7 +20,7 @@
            Get ready to be inspired. Get ready to 
         change the world. Our content and curriculum have obvious ties to Science, Technology, and Engineering.
       </p>
-      <div class="btn"><a href="#" class="btn btn-get-started">Get Started</a></div>
+      <div class="btn"><a href="/contact_form" class="btn btn-get-started">Get Started</a></div>
     </div>
     <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
       <div class="image-stack">
@@ -53,7 +53,7 @@
           and breaking it down into steps that are so
            simple that a computer can execute them.
       </p>
-      <div class="btn"><a href="#" class="btn btn-get-started">Get Started</a></div>
+      <div class="btn"><a href="/contact_form" class="btn btn-get-started">Get Started</a></div>
     </div>
   </div><!-- Features Item -->
 

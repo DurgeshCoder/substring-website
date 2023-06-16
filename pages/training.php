@@ -41,7 +41,7 @@
 
   
     <div class="btn text-center container">
-      <a href=""class="btn my-4 px-4" style="background:#1565c0; color:#fff;">Contact for offline training</a>
+      <a href="/contact_form"class="btn my-4 px-4" style="background:#1565c0; color:#fff;">Contact for offline training</a>
      </div>
 
         </div>

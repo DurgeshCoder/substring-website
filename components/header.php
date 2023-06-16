@@ -26,6 +26,6 @@
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav><!-- End Nav Menu -->
 
-<a href="contact_form.php" target="blank" class="btn-getstarted">Get Started</a>
+<a href="/contact_form" target="blank" class="btn-getstarted">Get Started</a>
 
 </div>
