@@ -2,7 +2,7 @@
   <meta content="substring technolodies, substring technologies private limited" name="keywords">
 
   <!-- Favicons -->
-  <link href="Images/Substring Technology.png" rel="icon">
+  <link href="images/Substring Technology.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
