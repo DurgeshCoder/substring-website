@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include "components/important_links.php" ?>
+    <?php 
+
+include "./helper/subject_dao.php";
+include "./helper/database.php";
+$subject_dao=new SubjectDao($conn);
+$subjects=$subject_dao->get_subjects();
+// print_r($subjects);
+
+
+
+
+?>
     <title>Offline Training</title>
 </head>
 <body>
@@ -20,6 +32,7 @@
 
       <div class="container">
         <div class="row">
+          
           <div class="col-lg-10">
             <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Trainig Section</h2>
             <p data-aos="fade-up" data-aos-delay="200">We create engineers by  providing quality content....</p>
@@ -40,7 +53,7 @@
     <section class="taining_form">
       <div class="container">
       <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
-              <input type="text" class="form-control" placeholder="Search for Training">
+              <input type="text" class="form-control" placeholder="Search for Training" >
               <input type="submit" class="btn btn-primary" value="Search">
             </form>
       </div>
@@ -55,14 +68,22 @@
    <section class="training_subject" >
     <div class="container">
       <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-4">
+      <?php
+
+
+foreach($subjects as $key=> $value){
+
+
+
+    ?>
+        <div class="col-lg-4 my-2">
           <div class="card">
             <div class="img">
-              <img src="images/t_subject.png.crdownload" class="w-100">
+              <img src="images/<?= $value["cover_img"] ?>" class="w-100">
             </div>
             <div class="section-tittle">
-              <h2>Digital Ocean series</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officia voluptatibus nobis optio id, sed deserunt quam, ipsum ea accusamus, soluta ullam quidem hic facere!</p>
+              <h2> <?= $value['sub_name'] ?></h2>
+              <p><?= $value["short_description"] ?></p>
 
             </div>
             <div class="button m-auto">
@@ -70,86 +91,16 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="img">
-              <img src="images/t_subject.png.crdownload" class="w-100">
-            </div>
-            <div class="section-tittle">
-              <h2>Digital Ocean series</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officia voluptatibus nobis optio id, sed deserunt quam, ipsum ea accusamus, soluta ullam quidem hic facere!</p>
+        <?php
+    
 
-            </div>
-            <div class="button m-auto">
-              <button class="btn btn-primary">Start Learning</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="img">
-              <img src="images/t_subject.png.crdownload" class="w-100">
-            </div>
-            <div class="section-tittle ">
-              <h2>Digital Ocean series</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officia voluptatibus nobis optio id, sed deserunt quam, ipsum ea accusamus, soluta ullam quidem hic facere!</p>
 
-            </div>
-            <div class="button m-auto">
-              <button class="btn btn-primary">Start Learning</button>
-            </div>
-          </div>
-        </div>
+}
 
-      </div>
-      <div class="row" data-aos="fade-up" data-aos-delay="100" id="training-row">
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="img">
-              <img src="images/t_subject.png.crdownload" class="w-100">
-            </div>
-            <div class="section-tittle">
-              <h2>Digital Ocean series</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officia voluptatibus nobis optio id, sed deserunt quam, ipsum ea accusamus, soluta ullam quidem hic facere!</p>
 
-            </div>
-            <div class="button m-auto">
-              <a class="btn btn-primary">Start Learning</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="img">
-              <img src="images/t_subject.png.crdownload" class="w-100">
-            </div>
-            <div class="section-tittle">
-              <h2>Digital Ocean series</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officia voluptatibus nobis optio id, sed deserunt quam, ipsum ea accusamus, soluta ullam quidem hic facere!</p>
+?>
 
-            </div>
-            <div class="button m-auto">
-              <button class="btn btn-primary">Start Learning</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="img">
-              <img src="images/t_subject.png.crdownload" class="w-100">
-            </div>
-            <div class="section-tittle ">
-              <h2>Digital Ocean series</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat officia voluptatibus nobis optio id, sed deserunt quam, ipsum ea accusamus, soluta ullam quidem hic facere!</p>
 
-            </div>
-            <div class="button m-auto">
-              <button class="btn btn-primary">Start Learning</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
    </section>
 
@@ -212,5 +163,12 @@
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
+<script>
+        
+
+            </script>
+
 </body>
 </html>
+
+

@@ -3268,3 +3268,65 @@ section {
     margin-top: 20px;
   }
 }
+
+
+
+/* java training banner */
+
+
+
+.java_training_banner{
+ 
+  --color-default: #ffffff;
+  --color-default-rgb: 255, 255, 255;
+  --color-background: #03092c;
+  --color-background-rgb: 0, 0, 0;
+  width: 100%;
+ min-height: 75vh;
+  padding: 160px 0 80px 0;
+margin-top: -90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* position: relative; */
+}
+ 
+.java_training_card .card{
+
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border: none;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px 20px 10px 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    rgb(132, 127, 127), rgb(172, 169, 169) 50%, #333 50%, #333
+ );
+ transition: all 0.5s ease;
+  background-size: 100% 200%;
+}
+.training_subject .card:hover {
+  background-position: 100% 100%;
+  color: #fff;
+}
+.training_subject .card .section-tittle{
+  margin: 40px 20px;
+}
+@media (max-width: 990px) {
+  .training_subject .card{
+   margin-top: 20px;
+  }
+  #training-row{
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 990px) {
+  .java_training_card .card{
+  
+    margin-top: -500px;
+    margin-right: 90px;
+  }
+}
