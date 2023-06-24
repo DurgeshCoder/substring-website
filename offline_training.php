@@ -9,6 +9,7 @@
 include "./helper/subject_dao.php";
 include "./helper/database.php";
 $subject_dao=new SubjectDao($conn);
+
 $subjects=$subject_dao->get_subjects();
 // print_r($subjects);
 
@@ -87,7 +88,7 @@ foreach($subjects as $key=> $value){
 
             </div>
             <div class="button m-auto">
-              <button class="btn btn-primary">Start Learning</button>
+              <a href="java.php?slug=java-course" class="btn btn-primary">Start Learning</a>
             </div>
           </div>
         </div>
