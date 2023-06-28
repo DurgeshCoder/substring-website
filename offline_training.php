@@ -77,8 +77,8 @@ foreach($subjects as $key=> $value){
 
 
     ?>
-        <div class="col-lg-4 my-2">
-          <div class="card">
+        <div class="col-lg-4 my-2  " id="subject_box">
+          <div class="card " >
             <div class="img">
               <img src="images/<?= $value["cover_img"] ?>" class="w-100">
             </div>
@@ -87,8 +87,8 @@ foreach($subjects as $key=> $value){
               <p><?= $value["short_description"] ?></p>
 
             </div>
-            <div class="button m-auto">
-              <a href="java.php?slug=java-course" class="btn btn-primary">Start Learning</a>
+            <div class="button ">
+              <a href="java.php?slug=<?= $value["slug"] ?>" class="btn btn-primary">Start Learning</a>
             </div>
           </div>
         </div>

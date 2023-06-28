@@ -3085,11 +3085,20 @@ section {
 
 
 
+#subject_box{
+min-height: 600px;
+}
+#subject_box .card{
+  height: 100%;
+}
 
 
+#subject_box .button{
 
-
-
+position: absolute;
+bottom: 20px;
+margin-left: 110px;
+}
 
 
 

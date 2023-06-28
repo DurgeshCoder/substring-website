@@ -15,10 +15,19 @@
 <?php
 include "./helper/subject_dao.php";
 include "./helper/database.php";
+include "./services/subject.php";
 $subject_dao = new SubjectDao($conn);
+$subject_data_dao = new SubjectService();
 $slug = $_GET['slug'];
 $subjects = $subject_dao->get_subjects_topic_subtopic($slug);
+$newSubject = $subject_data_dao->transformData($subjects);
+// print_r($newSubject);
+// rating variable
+$tottal_rating = 5;
 
+$subject = $newSubject[0];
+$number = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+print_r($number);
 ?>
 
 <body>
@@ -37,31 +46,38 @@ $subjects = $subject_dao->get_subjects_topic_subtopic($slug);
       <div class="row justify-space-between">
 
         <div class="col-lg-7">
-        <?php
-                      foreach ($subjects as $key => $value) {
 
+          <h2 data-aos="fade-up" data-aos-delay="100"> <?= $subject['subject'] ?></h2>
 
+          <p data-aos="fade-up" data-aos-delay="200"> <?=$subject['shortDescription'] ?> </p>
 
-                        ?>
-          <h2 data-aos="fade-up" data-aos-delay="100"> <?= $value['sub_name'] ?></h2>
-          <p data-aos="fade-up" data-aos-delay="200"> <?= $value['short_description'] ?> </p>
-          <h2 data-aos="fade-up" data-aos-delay="100">Language: <?= $value['language'] ?></h2>
-          <h2 data-aos="fade-up" data-aos-delay="100">
+          </div>
+          <div class="col-lg-7 my-4">
+
+          <h3 data-aos="fade-up" data-aos-delay="300">Language: <?=$subject['languages'] ?></h3>
+ 
+          </div>
+          <div class="col-lg-7">
+
+          <h3 data-aos="fade-up" data-aos-delay="400">
             Rating:
             <?php 
-            for ($i = 0; $i <= 3; $i++){
+            for ($i = 0; $i < $subject['ratings'] ; $i++){
               ?>
             
              
-              <img src="images/star.png" >
+              <img src="images/star_yellow.png"  width="32px">
               <?php
             }
             ?>
-
-            </h2>
-          <?php
-                      } 
-?>
+                        <?php 
+            for ($i =  $subject['ratings'] ; $i < $tottal_rating; $i++){
+              ?>
+            <img src="images/star_white.png"  width="32px">
+            <?php
+            }
+            ?>
+            </h3>
 
         </div>
 
@@ -78,17 +94,12 @@ $subjects = $subject_dao->get_subjects_topic_subtopic($slug);
       <div class="col-lg-4 my-2">
         <div class="card">
           <div class="img">
-            <img src="images/t_subject.png.crdownload" class="w-100 rounded-4">
+            <img src="images/<?=$subject['coverImages'] ?>" class="w-100 rounded-4">
           </div>
-          <div class="button m-auto my-4">
-            <button class="btn btn-primary">Start Learning</button>
-          </div>
-          <div class="section-tittle">
-            <h2>Features of this Course :</h2>
-            <p>18 + Quality Videos</p>
-            <p>1000 + Enrollments</p>
-            <p>5 out of 5 Students Reviews</p>
-            <p>Course will be in Hindi</p>
+
+          <div class="section-tittle my-2">
+          <p data-aos="fade-up" data-aos-delay="200"> <?=$subject['shortDescription'] ?> </p>
+          <p data-aos="fade-up" data-aos-delay="200"> <?=$subject['shortDescription'] ?> </p>
           </div>
         </div>
       </div>
@@ -122,24 +133,17 @@ $subjects = $subject_dao->get_subjects_topic_subtopic($slug);
               <!-- subject description -->
 
               <div class="description" data-aos="fade-up">
-              <?php
-                      foreach ($subjects as $key => $value) {
+   
+                <p><?= $subject['longDescription'] ?> </p>
 
-
-
-                        ?>
-                <p><?= $value['long_description'] ?> </p>
-                <?php
-                }
-                ?>
               </div>
               <!-- end -->
 
 
               <!-- key highlights tittle -->
-              <div class="container section-title" data-aos="fade-up">
+              <!-- <div class="container section-title" data-aos="fade-up">
                 <h2>Key Highlights Off Our Course</h2>
-              </div>
+              </div> -->
               <!-- End tittle -->
 
             </div>
@@ -150,8 +154,8 @@ $subjects = $subject_dao->get_subjects_topic_subtopic($slug);
                   <div class="row gy-4">
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                      <div class="content px-xl-5">
-                        <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+                      <div class="content px-xl-5 my-4">
+                      
                         <p>
                           Welcome to our software development and training company! Below, you'll find answers to some
                           frequently asked questions about our company and the services we provide:
@@ -164,32 +168,48 @@ $subjects = $subject_dao->get_subjects_topic_subtopic($slug);
 
 
                     <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-                      <?php
-                      foreach ($subjects as $key => $value) {
-
-
-
+                    <?php
+                      foreach ($subject['topics'] as $topics => $value)  {
                         ?>
-                        <div class="faq-container">
+                        <div class="faq-container my-4">
+          
                           <div class="faq-item faq-active">
-                            <h3><span class="num">1.</span> <span>
-                                <?= $value['topic_tittle'] ?>
+                            <h3><span class="num">
+                              1.
+                                 </span> <span>
+                                <?= $value['topic'] ?>
                               </span></h3>
+                              <?php
+                               foreach ($value['subtopicsArray'] as $subtopicsArray => $value)  {
+                                ?>
                             <div class="faq-content">
+                            
                               <p>
-                                <?= $value["sub_topic_tittle"] ?>
-                              </p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                          </div><!-- End Faq item-->
 
-                          <?php
+                                <span>1.
+                             
+                                <?= $value["subtopicTitle"] ?>
+                                </span>
+                              </p>
+
+                            </div>
+             
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                            <?php
                       }
                       ?>
-                      </div>
+                          </div><!-- End Faq item-->
 
+ 
+
+                      </div>
+                      <?php
+                      }
+                      ?>
                     </div>
+
                   </div>
+
 
                 </div>
               </section>
