@@ -33,6 +33,16 @@ $statement->execute();
 $result=$statement->fetchAll();
 return $result;
 }
+
+function search_data($filter_data){
+    $searchTerm = $filter_data;
+    $query ="SELECT * FROM subjects WHERE sub_name LIKE :searchTerm";
+    $stmt = $this->conn->prepare($query);
+    $stmt->bindValue(':searchTerm', '%' . $searchTerm . '%');
+    $stmt->execute();
+    $filteredData = $stmt->fetchAll(); 
+    return $filteredData;
+}
 }
 
 

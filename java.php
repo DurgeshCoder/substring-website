@@ -26,8 +26,9 @@ $newSubject = $subject_data_dao->transformData($subjects);
 $tottal_rating = 5;
 
 $subject = $newSubject[0];
-$number = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
-print_r($number);
+$topicnumber = 1;
+$subtopicnumber = 1;
+// print_r($number);
 ?>
 
 <body>
@@ -151,18 +152,9 @@ print_r($number);
               <section id="faq" class="faq">
                 <div class="container">
 
-                  <div class="row gy-4">
+                  <div class="row justify-content-center">
 
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                      <div class="content px-xl-5 my-4">
-                      
-                        <p>
-                          Welcome to our software development and training company! Below, you'll find answers to some
-                          frequently asked questions about our company and the services we provide:
-
-                        </p>
-                      </div>
-                    </div>
+                  
 
 
 
@@ -175,7 +167,7 @@ print_r($number);
           
                           <div class="faq-item faq-active">
                             <h3><span class="num">
-                              1.
+                              <?= $topicnumber++; ?>.
                                  </span> <span>
                                 <?= $value['topic'] ?>
                               </span></h3>
@@ -186,8 +178,8 @@ print_r($number);
                             
                               <p>
 
-                                <span>1.
-                             
+                                <span>
+                                <?= $subtopicnumber++; ?>.
                                 <?= $value["subtopicTitle"] ?>
                                 </span>
                               </p>
