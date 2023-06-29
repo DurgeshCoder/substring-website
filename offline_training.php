@@ -11,7 +11,7 @@ include "./helper/database.php";
 $subject_dao=new SubjectDao($conn);
 
 $subjects=$subject_dao->get_subjects();
-// print_r($subjects);
+
 
 
 
@@ -52,12 +52,29 @@ $subjects=$subject_dao->get_subjects();
     <!-- training form -->
 
     <section class="taining_form">
+ 
       <div class="container">
-      <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
-              <input type="text" class="form-control" placeholder="Search for Training" >
-              <input type="submit" class="btn btn-primary" value="Search">
+         <?php
+       if (isset($_POST['submit'])) {
+       $filter_data = $_POST['search'];
+         if(trim($filter_data) != ""){
+          $filtered_subjects=$subject_dao->search_data($filter_data);
+         
+          
+          // print_r($subjects);
+          $subjects = $filtered_subjects;
+        }
+       }
+
+   
+        ?>
+      <form action="" method="post" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
+              <input type="text" class="form-control" placeholder="Search for Training" name="search">
+              <input type="submit" name="submit" class="btn btn-primary" value="Search">
             </form>
       </div>
+
+      
     </section>
 
     <!-- end training form -->
