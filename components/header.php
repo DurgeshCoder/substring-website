@@ -14,7 +14,7 @@
     <li><a href="/" class="active">Home</a></li>
     <li><a href="/#services">Services</a></li>
     <li><a href="/#pricing">Develoment</a></li>
-    <li><a href="/#training">Training</a></li>
+    <li><a href="offline_training.php">Training</a></li>
     <!-- <li><a href="">Intership</a></li>
     <li><a href="blog.html">Placement</a></li> -->
     <li><a href="/#portfolio">Gallery</a></li>

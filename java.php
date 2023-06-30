@@ -27,7 +27,9 @@ $tottal_rating = 5;
 
 $subject = $newSubject[0];
 $topicnumber = 1;
-$subtopicnumber = 1;
+
+$reset = null;
+
 // print_r($number);
 ?>
 
@@ -48,37 +50,43 @@ $subtopicnumber = 1;
 
         <div class="col-lg-7">
 
-          <h2 data-aos="fade-up" data-aos-delay="100"> <?= $subject['subject'] ?></h2>
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            <?= $subject['subject'] ?>
+          </h2>
 
-          <p data-aos="fade-up" data-aos-delay="200"> <?=$subject['shortDescription'] ?> </p>
+          <p data-aos="fade-up" data-aos-delay="200">
+            <?= $subject['shortDescription'] ?>
+          </p>
 
-          </div>
-          <div class="col-lg-7 my-4">
+        </div>
+        <div class="col-lg-7 my-4">
 
-          <h3 data-aos="fade-up" data-aos-delay="300">Language: <?=$subject['languages'] ?></h3>
- 
-          </div>
-          <div class="col-lg-7">
+          <h3 data-aos="fade-up" data-aos-delay="300">Language:
+            <?= $subject['languages'] ?>
+          </h3>
+
+        </div>
+        <div class="col-lg-7">
 
           <h3 data-aos="fade-up" data-aos-delay="400">
             Rating:
-            <?php 
-            for ($i = 0; $i < $subject['ratings'] ; $i++){
+            <?php
+            for ($i = 0; $i < $subject['ratings']; $i++) {
               ?>
-            
-             
-              <img src="images/star_yellow.png"  width="32px">
+
+
+              <img src="images/star_yellow.png" width="32px">
               <?php
             }
             ?>
-                        <?php 
-            for ($i =  $subject['ratings'] ; $i < $tottal_rating; $i++){
-              ?>
-            <img src="images/star_white.png"  width="32px">
             <?php
+            for ($i = $subject['ratings']; $i < $tottal_rating; $i++) {
+              ?>
+              <img src="images/star_white.png" width="32px">
+              <?php
             }
             ?>
-            </h3>
+          </h3>
 
         </div>
 
@@ -90,17 +98,21 @@ $subtopicnumber = 1;
 
   </section><!-- End Training Banner Section -->
 
-  <div class="java_training_card d-flex ">
+  <div class="java_training_card d-flex " data-aos="fade-up" data-aos-delay="200">
     <div class="row justify-content-end align-item-end">
       <div class="col-lg-4 my-2">
         <div class="card">
-          <div class="img">
-            <img src="images/<?=$subject['coverImages'] ?>" class="w-100 rounded-4">
+          <div class="img" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/<?= $subject['coverImages'] ?>" class="w-100 rounded-4">
           </div>
 
           <div class="section-tittle my-2">
-          <p data-aos="fade-up" data-aos-delay="200"> <?=$subject['shortDescription'] ?> </p>
-          <p data-aos="fade-up" data-aos-delay="200"> <?=$subject['shortDescription'] ?> </p>
+            <p data-aos="fade-up" data-aos-delay="400">
+              <?= $subject['shortDescription'] ?>
+            </p>
+            <p data-aos="fade-up" data-aos-delay="400">
+              <?= $subject['shortDescription'] ?>
+            </p>
           </div>
         </div>
       </div>
@@ -134,8 +146,10 @@ $subtopicnumber = 1;
               <!-- subject description -->
 
               <div class="description" data-aos="fade-up">
-   
-                <p><?= $subject['longDescription'] ?> </p>
+
+                <p>
+                  <?= $subject['longDescription'] ?>
+                </p>
 
               </div>
               <!-- end -->
@@ -149,53 +163,64 @@ $subtopicnumber = 1;
 
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <section id="faq" class="faq">
-                <div class="container">
+              <!-- subject Section Title -->
+              <div class="container section-title " data-aos="fade-up">
+                <h2>Content of the Course</h2>
+              </div><!-- End Section Title -->
+              <section id="faq" class="faq " style="margin-top:-80px;">
+                <div class="container my-0">
 
                   <div class="row justify-content-center">
 
-                  
 
 
 
 
-                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-                    <?php
-                      foreach ($subject['topics'] as $topics => $value)  {
+
+                    <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
+                      <?php
+                      foreach ($subject['topics'] as $topics => $value) {
                         ?>
                         <div class="faq-container my-4">
-          
+
                           <div class="faq-item faq-active">
                             <h3><span class="num">
-                              <?= $topicnumber++; ?>.
-                                 </span> <span>
+                                <?= $topicnumber++; ?>.
+
+                              </span> <span>
                                 <?= $value['topic'] ?>
                               </span></h3>
-                              <?php
-                               foreach ($value['subtopicsArray'] as $subtopicsArray => $value)  {
-                                ?>
-                            <div class="faq-content">
-                            
-                              <p>
-
-                                <span>
-                                <?= $subtopicnumber++; ?>.
-                                <?= $value["subtopicTitle"] ?>
-                                </span>
-                              </p>
-
-                            </div>
-             
-                            <i class="faq-toggle bi bi-chevron-right"></i>
                             <?php
-                      }
-                      ?>
+                            $subtopicIndex = 1;
+                            foreach ($value['subtopicsArray'] as $subtopicsArray => $value) {
+                              ?>
+                              <div class="faq-content">
+
+                                <p>
+
+                                  <span>
+                                    <?= $subtopicIndex;
+
+                                    ?>.
+
+
+                                    <?= $value["subtopicTitle"] ?>
+                                  </span>
+                                </p>
+
+                              </div>
+
+                              <i class="faq-toggle bi bi-chevron-right"></i>
+                              <?php
+                              $subtopicIndex++;
+                            }
+                            ?>
                           </div><!-- End Faq item-->
 
- 
 
-                      </div>
-                      <?php
+
+                        </div>
+                        <?php
                       }
                       ?>
                     </div>
@@ -206,7 +231,13 @@ $subtopicnumber = 1;
                 </div>
               </section>
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Details</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+              <!-- subject Section Title -->
+              <div class="container section-title " data-aos="fade-up">
+                <h2>Resources we Provide</h2>
+              </div><!-- End Section Title -->
+            </div>
           </div>
         </div>
       </section>
