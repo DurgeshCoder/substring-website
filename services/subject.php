@@ -12,7 +12,7 @@ class SubjectService{
     foreach ($oldSubject as $subtopics) {
       if ($oldSubtopic == null) {
         // first subject topic
-        $ob = array(
+        $ob = [
           "subject" => $subtopics["sub_name"],
           "shortDescription" => $subtopics["short_description"],
           "longDescription" => $subtopics["long_description"],
@@ -30,7 +30,7 @@ class SubjectService{
               ),
             ),
           ),
-        );
+        ];
         $newData[] = $ob;
         $oldSubjectIndex += 1;
       } else {

@@ -285,7 +285,7 @@ section {
   --color-background: #ffffff;
   --color-secondary: #444444;
   --color-nav: #444444;
-  --color-nav-hover: #e84545;
+  --color-nav-hover: #1565c0;
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
 }
 
