@@ -12,7 +12,17 @@
 
     <?php include "../components/bootstraplink.php"; ?>
   </head>
-
+  <?php
+include "../../helper/subject_dao.php";
+include "../../helper/database.php";
+include "../../services/subject.php";
+$subject_dao = new SubjectDao($conn);
+$subject_data_dao = new SubjectService();
+$slug = $_GET['slug'];
+$subjects = $subject_dao->get_subjects_topic_subtopic($slug);
+$newSubject = $subject_data_dao->transformData($subjects);
+print_r($newSubject)
+?>
   <body class="nav-md">
   <div class="container body">
       <div class="main_container">

@@ -23,7 +23,7 @@ include "../helper/config.php";
                 const selectBox = document.getElementById("subject_select_box")
                 let elements = `<option disabled selected>---select subject---</option>`;
                 data.forEach(item => {
-                    elements += `<option>${item.sub_  name
+                    elements += `<option>${item.sub_name
                 } </option > `;
             });
             selectBox.innerHTML=elements;
