@@ -7,6 +7,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
   <link rel="icon" href="images/man.png" type="image/ico" />
 
   <title>Admin|Dashboard</title>
@@ -173,9 +176,9 @@
 
                               <div id="editor-one" class="editor-wrapper"></div>
 
-                              <textarea type="text" name="short_description" class="form-control"></textarea>
+                              
 
-                              <!-- <textarea type="text" id="descr" name="long_description" style="display:block;"></textarea> -->
+                              <textarea type="text" id="descr" name="long_description" style="display:block;"></textarea>
 
 
 
@@ -267,6 +270,21 @@
                 );
                   
                  $subject_dao->insert_subject_data($subjectData);
+
+           
+                 if($subjectData){
+                  ?>
+                 
+                  <script>
+                  swal({
+        title: "Success!",
+        text: "Your data has successfully inserted",
+        icon: "success",
+        button: "Ok!",
+      });
+                </script>
+                 <?php
+                 }
                 
                   };
                 

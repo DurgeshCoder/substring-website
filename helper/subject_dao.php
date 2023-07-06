@@ -71,6 +71,8 @@ function insert_subject_data($subjectData){
             // $Language = $_POST['language'];
             // $Rating = $_POST['rating'];
             $stmt->execute();
+        
+
 }
 }
 
