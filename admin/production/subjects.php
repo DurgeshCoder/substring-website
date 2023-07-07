@@ -83,7 +83,16 @@ $subjects=$subject_dao->get_subjects();
         <td class="a-right a-right "> <?= $value['language'] ?></td>
         <td class=" last"><a href="#"> <?= $value['rating'] ?><i class="success fa fa-long-arrow-up"></i></a>
        </td>
-        <td class=" last"><a  href="#" class="btn btn-success">View </a><a href="#"  class="btn btn-warning">Edit </a><a href="#"  class="btn btn-danger">Delete </a>
+        <td class=" last"><a  href="#" class="btn btn-success">View </a>
+        <a href="updateSubject.php?id=<?=$value['sub_id'] ?>&
+        subject=<?= $value['sub_name'] ?>&
+        fe=<?= $value['fee'] ?>&
+        dis=<?= $value['discount'] ?>&
+        dis_after=<?= $value['fee_after_discount'] ?>&
+        slg=<?= $value['slug'] ?>&
+        lan= <?= $value['language'] ?>&
+        rate=<?= $value['rating'] ?>"  class="btn btn-warning">Edit </a>
+        <a href="#"  class="btn btn-danger">Delete </a>
         </td>
       </tr>
     <?php 

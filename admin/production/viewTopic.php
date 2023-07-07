@@ -22,7 +22,7 @@ $subject_data_dao = new SubjectService();
 $slug = $_GET['slug'];
 $subjects = $subject_dao->get_subjects_topic_subtopic($slug);
 $newSubject = $subject_data_dao->transformData($subjects);
-$subjects=$subject_dao->get_subjects();
+$subject = $newSubject[0];
 
 $tottal_rating = 5;
 
@@ -69,17 +69,18 @@ $reset = null;
     </thead>
 
     <tbody>
-      <?php
-      foreach($subjects as $key=> $value){
-        ?>
+    <?php
+                      foreach ($subject['topics'] as $topics => $value) {
+                        ?>
       <tr class="even pointer">
         <td class="a-center ">
           <input type="checkbox" class="flat" name="table_records">
         </td>
         <td class=" ">1</td> 
-        <td class=" "> <?= $value['sub_name'] ?></td>
+        <td class=" "> <?= $value['topic'] ?> </td>
       
-        <td class=" last"><a  href="viewTopic.php?slug=<?= $value["slug"] ?>" class="btn btn-success">Click</a>
+        <td class=" last"><a  href="#" class="btn btn-success">View </a><a href="#"  class="btn btn-warning">Edit </a><a href="#"  class="btn btn-danger">Delete </a>
+        </td>
         </td>
       </tr>
     <?php 
