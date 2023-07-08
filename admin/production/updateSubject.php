@@ -16,7 +16,7 @@
 
   <?php include "../components/bootstraplink.php"; ?>
 </head>
-<?php 
+<?php
 
 include "../../helper/database.php";
 
@@ -24,13 +24,14 @@ $id = $_GET['id'];
 $sub = $_GET['subject'];
 $fee = $_GET['fe'];
 $dis = $_GET['dis'];
-$af_dis =$_GET['dis_after']; 
+$af_dis = $_GET['dis_after'];
 $slg = $_GET['slg'];
 $ln = $_GET['lan'];
 $ra = $_GET['rate'];
 
 
 ?>
+
 <body class="nav-md">
   <div class="container body">
     <div class="main_container">
@@ -83,7 +84,7 @@ $ra = $_GET['rate'];
                     <label class="col-sm-3 col-form-label">Fee</label>
                     <div class="col-sm-9">
                       <div class="input-group">
-                        <input type="number" name="fee" class="form-control"  value="<?php echo $fee ?>">
+                        <input type="number" name="fee" class="form-control" value="<?php echo $fee ?>">
                       </div>
                     </div>
                   </div>
@@ -91,7 +92,7 @@ $ra = $_GET['rate'];
                     <label class="col-sm-3 col-form-label">Discount</label>
                     <div class="col-sm-9">
                       <div class="input-group">
-                        <input type="number" name="discount" class="form-control"  value="<?php echo $dis ?>">
+                        <input type="number" name="discount" class="form-control" value="<?php echo $dis ?>">
                       </div>
                     </div>
                   </div>
@@ -99,7 +100,8 @@ $ra = $_GET['rate'];
                     <label class="col-sm-3 col-form-label">Fee After Discount</label>
                     <div class="col-sm-9">
                       <div class="input-group">
-                        <input  type="number" name="fee_after_discount" class="form-control"  value="<?php echo $af_dis ?>">
+                        <input type="number" name="fee_after_discount" class="form-control"
+                          value="<?php echo $af_dis ?>">
                       </div>
                     </div>
                   </div>
@@ -115,7 +117,7 @@ $ra = $_GET['rate'];
                     <label class="col-sm-3 col-form-label">Slug</label>
                     <div class="col-sm-9">
                       <div class="input-group">
-                        <input type="text"  name="slug" class="form-control"  value="<?php echo $slg ?>">
+                        <input type="text" name="slug" class="form-control" value="<?php echo $slg ?>">
                       </div>
                     </div>
                   </div>
@@ -123,7 +125,7 @@ $ra = $_GET['rate'];
                     <label class="col-sm-3 col-form-label">Language</label>
                     <div class="col-sm-9">
                       <div class="input-group">
-                        <input type="text" name="language" class="form-control"  value="<?php echo $ln ?>">
+                        <input type="text" name="language" class="form-control" value="<?php echo $ln ?>">
                       </div>
                     </div>
                   </div>
@@ -131,16 +133,54 @@ $ra = $_GET['rate'];
                     <label class="col-sm-3 col-form-label">Rating</label>
                     <div class="col-sm-9">
                       <div class="input-group">
-                        <input type="number" name="rating" class="form-control"  value="<?php echo $ra ?>">
+                        <input type="number" name="rating" class="form-control" value="<?php echo $ra ?>">
                       </div>
                     </div>
                   </div>
-                 <div class="btn d-flex justify-content-center ">
-                  <button type="submit" name="submit" class="btn btn-primary">Update</button>  
-                 </div>
+                  <div class="btn d-flex justify-content-center ">
+                    <button type="submit" name="submit" class="btn btn-primary">Update</button>
+                  </div>
 
                 </form>
+                <?php
+                include "../../helper/subject_dao.php";
+                include "../../helper/database.php";
+                $subject_dao = new SubjectDao($conn);
 
+                if (isset($_POST['submit'])) {
+
+                  $subjectName = $_POST['subject_name'];
+
+
+                  $Fee = $_POST['fee'];
+                  $Discount = $_POST['discount'];
+                  $discountFee = $_POST['fee_after_discount'];
+                  $Slug = $_POST['slug'];
+                  $Language = $_POST['language'];
+                  $Rating = $_POST['rating'];
+
+                  $subject_dao->update_subject($subjectName, $Fee, $Discount, $discountFee, $Slug, $Language, $Rating, $id);
+                  if ($subject_dao) {
+                    ?>
+
+                    <script>
+                      swal({
+                        title: "Success!",
+                        text: "Your data has successfully inserted",
+                        icon: "success",
+                        button: "Ok!",
+                      }
+                         );
+                    </script>
+                    <?php
+
+                  }
+                
+
+                }
+                ;
+
+                ?>
               </div>
             </div>
           </div>

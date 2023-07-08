@@ -20,7 +20,9 @@ $subject_dao=new SubjectDao($conn);
 
 $subjects=$subject_dao->get_subjects();
 
+$id = $_GET['id'];
 
+$subject_dao->delete_subject($id);
 
 
 
@@ -83,7 +85,7 @@ $subjects=$subject_dao->get_subjects();
         <td class="a-right a-right "> <?= $value['language'] ?></td>
         <td class=" last"><a href="#"> <?= $value['rating'] ?><i class="success fa fa-long-arrow-up"></i></a>
        </td>
-        <td class=" last"><a  href="#" class="btn btn-success">View </a>
+        <td class=" last"><a  href="subject_in_detail.php?slug=<?= $value["slug"] ?>" class="btn btn-success">View </a>
         <a href="updateSubject.php?id=<?=$value['sub_id'] ?>&
         subject=<?= $value['sub_name'] ?>&
         fe=<?= $value['fee'] ?>&
@@ -92,11 +94,14 @@ $subjects=$subject_dao->get_subjects();
         slg=<?= $value['slug'] ?>&
         lan= <?= $value['language'] ?>&
         rate=<?= $value['rating'] ?>"  class="btn btn-warning">Edit </a>
-        <a href="#"  class="btn btn-danger">Delete </a>
+        <a  href="?id=<?=$value['sub_id'] ?>" class="btn btn-danger">Delete</a>
         </td>
       </tr>
     <?php 
       }
+      function select(){
+        echo "The select function is called.";
+    }
     ?>
     </tbody>
   </table>

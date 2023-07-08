@@ -19,17 +19,10 @@ include "../../helper/database.php";
 include "../../services/subject.php";
 $subject_dao = new SubjectDao($conn);
 $subject_data_dao = new SubjectService();
-$slug = $_GET['slug'];
-$subjects = $subject_dao->get_subjects_topic_subtopic($slug);
-$newSubject = $subject_data_dao->transformData($subjects);
+
 $subjects=$subject_dao->get_subjects();
 
-$tottal_rating = 5;
 
-
-$topicnumber = 1;
-
-$reset = null;
 ?>
   <body class="nav-md">
   <div class="container body">
@@ -48,7 +41,7 @@ $reset = null;
           <!-- top tiles -->
           <div class="x_content">
 
-<p>Add class <code>bulk_action</code> to table for bulk actions options on row select</p>
+<h3>Choose a subject to view thier topics</h3>
 
 <div class="table-responsive text-center">
   <table class="table table-striped jambo_table bulk_action">

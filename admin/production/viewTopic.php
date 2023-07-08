@@ -48,7 +48,7 @@ $reset = null;
           <!-- top tiles -->
           <div class="x_content">
 
-<p>Add class <code>bulk_action</code> to table for bulk actions options on row select</p>
+<h3>Topic</h3>
 
 <div class="table-responsive text-center">
   <table class="table table-striped jambo_table bulk_action">
@@ -58,9 +58,9 @@ $reset = null;
           <input type="checkbox" id="check-all" class="flat">
         </th>
         <th class="column-title"># </th>
-        <th class="column-title">Subject </th>
+        <th class="column-title">Topic </th>
 
-        <th class="column-title no-link last"><span class="nobr">View Topic of Given Subject</span>
+        <th class="column-title no-link last"><span class="nobr">Action</span>
         </th>
         <th class="bulk-actions" colspan="7">
           <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
@@ -79,7 +79,7 @@ $reset = null;
         <td class=" ">1</td> 
         <td class=" "> <?= $value['topic'] ?> </td>
       
-        <td class=" last"><a  href="#" class="btn btn-success">View </a><a href="#"  class="btn btn-warning">Edit </a><a href="#"  class="btn btn-danger">Delete </a>
+        <td class=" last"><a href="#"  class="btn btn-warning">Edit </a><a href="#"  class="btn btn-danger">Delete </a>
         </td>
         </td>
       </tr>

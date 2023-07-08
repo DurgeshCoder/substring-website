@@ -36,7 +36,7 @@
           <div class="col-md-6 col-sm-12 col-lg-9">
             <div class="x_panel">
               <div class="x_title">
-                <h2>Form Buttons <small>Sessions</small></h2>
+                <h2>Insert Subject <small>Sessions</small></h2>
                 <ul class="nav navbar-right panel_toolbox">
                   <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                   </li>
@@ -245,18 +245,18 @@
                       </div>
                     </div>
                   </div>
-                 <div class="btn">
-                  <button type="submit" name="submit" class="btn btn-primary">Submit</button>  
-                 </div>
+                  <div class="btn d-flex justify-content-center ">
+                    <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                  </div>
 
                 </form>
                 <?php 
                 include "../../helper/subject_dao.php";
                 include "../../helper/database.php";
                 $subject_dao=new SubjectDao($conn);
+
                 if (isset($_POST['submit'])) {
-                  $longD  = $_POST['long_description'];
-                  print_r( $longD);
+
                 $subjectData = array(
                   "subjectName"=> $_POST['subject_name'],
                   "shortDes"=> $_POST['short_description'],

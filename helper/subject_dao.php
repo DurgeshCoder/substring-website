@@ -74,7 +74,48 @@ function insert_subject_data($subjectData){
         
 
 }
+
+function update_subject($subjectName,$Fee,$Discount,$discountFee,$Slug,$Language,$Rating, $id){
+  $query = "UPDATE subjects SET sub_name= '$subjectName',
+  fee = '$Fee',
+  discount = '$Discount',
+  fee_after_discount = '$discountFee',
+  slug = '$Slug',
+  language = '$Language',
+  rating = '$Rating'
+ 
+
+   WHERE sub_id =?";
+  $stmt = $this->conn->prepare($query);
+  $stmt->bindValue(1, $id);
+ 
+  $stmt->execute();
 }
+function delete_subject($id){
+    $query = "DELETE FROM subjects WHERE sub_id=?";  
+    $stmt = $this->conn->prepare($query);
+    $stmt->bindValue(1, $id);
+   
+    $stmt->execute(); 
+    if ($stmt->execute()) {
+        ?>
+      
+        <script>
+          swal({
+            title: "Success!",
+            text: "Your data has successfully inserted",
+            icon: "success",
+            button: "Ok!",
+          }
+             );
+        </script>
+        <?php
+      
+      }
+  }
+}
+
+
 
 
 
