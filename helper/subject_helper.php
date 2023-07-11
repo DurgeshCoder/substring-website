@@ -25,16 +25,18 @@ class SubjectDao{
 
     }
 
-    // // get subject by id
-    // function get_subject_by_id($id)
-    // {
-
-
-    //     $query="select * from subject where id =? ";
-
-    //     return $result;
-
-    // }
+    // get subject by id
+    function get_subject_by_id($id)
+    {
+        $query="select * from subject where sub_id =? ";
+        $statement=$this->conn->prepare($query);
+        $statement->bindValue(1, $id);
+        $statement->execute();
+        $result=$statement->fetchAll();
+        print_r($result);
+        return $result;
+     
+    }
 
 }
 

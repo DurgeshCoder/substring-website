@@ -105,7 +105,7 @@
      
             get_subjects().then(data => {
 
-                console.log(data)
+                console.log(data + "this is data")
                 const selectBox = document.getElementById("subject_select_box")
                 let elements = `<option disabled selected>---select subject---</option>`;
                 data.forEach(item => {

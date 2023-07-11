@@ -17,6 +17,8 @@
 
 include "../../helper/subject_dao.php";
 include "../../helper/database.php";
+
+include "../../helper/config.php";
 $subject_dao = new SubjectDao($conn);
 
 $subjects = $subject_dao->get_subjects();
@@ -107,8 +109,8 @@ $number = 1;
                         <?= $value['rating'] ?><i class="success fa fa-long-arrow-up"></i>
                       </a>
                     </td>
-                    <td class=" last"><a href="subject_in_detail.php?slug=<?= $value["slug"] ?>" type="button"
-                        class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter"><i
+                    <td class=" last"><a  type="button"
+                        class="btn btn-success" onclick="get_subject_detail(<?= $value['sub_id'] ?> )"><i
                           class="fa fa-eye"></i></a>
                       <a href="updateSubject.php?id=<?= $value['sub_id'] ?>&
         subject=<?= $value['sub_name'] ?>&
@@ -143,70 +145,23 @@ $number = 1;
       <!-- model for student detail -->
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Subject Detail</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="x_content">
-                <div class="row d-flex justify-content-center">
-                  <div class="col-lg-9">
-                    <!-- subject Section Title -->
-                    <div class="container section-title " data-aos="fade-up">
-                      <h2>Summary of the Course</h2>
-                    </div><!-- End Section Title -->
-                    <div class="description" data-aos="fade-up">
-
-                      <p>
-                        This is summary of the Subject
-                      </p>
-
-                    </div>
-                    <!-- end -->
-
-
-
-
-                    <!-- subject Section Title -->
-                    <div class="container section-title " data-aos="fade-up">
-                      <h2>Description of the Course</h2>
-                    </div><!-- End Section Title -->
-
-                    <div class="description" data-aos="fade-up">
-
-                      <p>
-                        this is detail of subject
-                      </p>
-
-                    </div>
-
-                    <div class="table">
-                      <table class="table table-sm">
-                        <caption>List of users</caption>
-                        <thead>
-                         <tr>
-                          <th>#</th>
-                          <th>Subject Name</th>
-                          <th>Fees</th>
-                          
-
-                         </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Java</td>
-                          <td>2000</td>
-                        </tr>
-                        </tbody>
-                      </table>
-                    </div>
+      <div class="modal" id="subject_detail_modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
                     <!-- end -->
 
 
@@ -234,6 +189,45 @@ $number = 1;
   </div>
   <?php include "../components/commonscript.php"; ?>
 
-</body>
+  <script src=" <?= $base_url ?>/admin/scripts/admin.js"></script>
+        <script>
 
+          function get_subject_by_id(){
+            alert("this is function call")
+          }
+     
+     const get_subject_by_id = (id) => {
+
+    alert("this is alert")
+
+        //         console.log(data + "this is data")
+        //         const shortD = document.getElementById("summary");
+        // data.forEach(item => {
+          
+        //   // console.log(item.short_description);
+        //   elements = `${item.short_description}`
+        //   });
+        //  shortD.innerHTML = elements;
+        });
+
+</script>
+
+</body>
+<script>
+        const get_subject_detail=(id) => {
+      // alert(id);
+      var myModal = new bootstrap.Modal(document.getElementById('subject_detail_modal'), {
+  keyboard: false
+});
+get_subject_by_id().then(data => {
+
+console.log(data + "this is data")
+
+
+
+});
+
+myModal.show(); 
+      }
+</script>
 </html>

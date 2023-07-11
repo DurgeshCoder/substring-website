@@ -45,6 +45,7 @@ function search_data($filter_data){
 }
 
 function insert_subject_data($subjectData){
+  try{
    $query = ("INSERT INTO  subjects (sub_name, short_description, long_description, fee, discount, fee_after_discount, slug, language, rating ) 
               VALUES (:subject_name, :short_description, :long_description, :fee, :discount, :fee_after_discount, :slug, :language, :rating)");
               $stmt = $this->conn->prepare($query);
@@ -71,7 +72,11 @@ function insert_subject_data($subjectData){
             // $Language = $_POST['language'];
             // $Rating = $_POST['rating'];
             $stmt->execute();
-        
+            return true;
+ } catch(PDOException $e){
+  return false;
+
+}
 
 }
 
@@ -97,21 +102,7 @@ function delete_subject($id){
     $stmt->bindValue(1, $id);
    
     $stmt->execute(); 
-    if ($stmt->execute()) {
-        ?>
-      
-        <script>
-          swal({
-            title: "Success!",
-            text: "Your data has successfully inserted",
-            icon: "success",
-            button: "Ok!",
-          }
-             );
-        </script>
-        <?php
-      
-      }
+   
   }
 }
 

@@ -7,8 +7,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+      <!-- script for sweetalert -->
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 
 
   <link rel="icon" href="images/man.png" type="image/ico" />
 
@@ -271,8 +273,10 @@
                   
                  $subject_dao->insert_subject_data($subjectData);
 
+                 $message = true;
+                
            
-                 if($subjectData){
+                 if($message){
                   ?>
                  
                   <script>
